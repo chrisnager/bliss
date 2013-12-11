@@ -51,6 +51,4 @@ _To take full advantage of bliss you must [minify your CSS](http://www.minifycss
 
 
 Shoutout to my west coast friends:
-I came up with the idea for bliss at six in the morning while chillin' with [@jina](http://twitter.com/jina) and [@mrmrs](http://twitter.com/mrmrs) chatting all night about CSS.
-
-
+I came up with the idea for bliss at six in the morning while chillin' with [@jina](http://twitter.com/jina) and [@mrmrs_](http://twitter.com/mrmrs_) chatting all night about CSS.
