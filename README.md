@@ -3,13 +3,13 @@ bliss
 
 (beautifully lean, ideal style sheets)
 
-bliss is a CSS experiment.
+bliss is a CSS experiment by [@chrisnager](http://twitter.com/chrisnager)
 
-author: [@chrisnager](http://twitter.com/chrisnager)
 
 ---
 
-_bliss takes the entire CSS language and splits each declaration into single purpose Sass placeholders_.
+
+__bliss takes the entire CSS language and splits each declaration into single purpose Sass placeholders__.
 
 ```scss
 %text-align_center { text-align: center; }
@@ -19,11 +19,15 @@ _bliss takes the entire CSS language and splits each declaration into single pur
 }
 ```
 
-_bliss allows your markup to stay perfectly clean_, one class per styled element. Sass placeholders allow you to build your CSS modularly.
 
-```markup
-    <div class="header-bar">App Title</div>
+__bliss allows your markup to stay perfectly clean__, one class per styled element.
+
+```html
+<div class="header-bar">App Title</div>
 ```
+
+
+Sass placeholders allow you to build your CSS modularly.
 
 ```scss
 %section {
@@ -37,11 +41,14 @@ _bliss allows your markup to stay perfectly clean_, one class per styled element
 }
 ```
 
-_bliss is performant_. It only compiles the CSS that is used so your style sheet stays lean.
 
-To take full advantage of bliss you must [minify your CSS](http://www.minifycss.com/css-compressor/).
+__bliss is performant__. It only compiles the CSS that is used so your style sheet stays lean.
+
+_To take full advantage of bliss you must [minify your CSS](http://www.minifycss.com/css-compressor/)_.
+
 
 ---
+
 
 Shoutout to my west coast friends:
 I came up with the idea for bliss at six in the morning while chillin' with [@jina](http://twitter.com/jina) and [@mrmrs](http://twitter.com/mrmrs) chatting all night about CSS.
