@@ -1,0 +1,103 @@
+// ==========================================================================
+   $module: "html", "body";
+// ==========================================================================
+
+html {
+    @extend %background-color_paleturquoise;
+    @extend %font-family_sans-serif;
+}
+
+body {
+    @extend %margin_0;
+}
+
+
+
+
+
+
+// ==========================================================================
+   $module: "section";
+// ==========================================================================
+
+%section {
+    @extend %padding_m;
+}
+
+
+
+
+
+
+// ==========================================================================
+   $module: "header-bar";
+// ==========================================================================
+
+.#{$module} {
+    @extend %section;
+    @extend %background-color_teal;
+    @extend %border-bottom-width_xs;
+}
+
+    .#{$module}__title {
+        @extend %margin-top_0;
+        @extend %margin-bottom_0;
+        @extend %color_white;
+    }
+
+
+
+
+
+
+// ==========================================================================
+   $module: "main";
+// ==========================================================================
+
+.main {
+    @extend %section;
+}
+
+
+
+
+
+
+// ==========================================================================
+   $module: "card";
+// ==========================================================================
+
+.#{$module} {
+    @extend %margin_m;
+    @extend %padding_l;
+    @extend %background-color_skyblue;
+}
+
+    .#{$module}__title {
+        @extend %margin-top_0;
+        @extend %margin-bottom_0;
+        @extend %color_midnightblue;
+    }
+
+    .#{$module}__body {
+        @extend %margin-top_0;
+        @extend %margin-bottom_0;
+        @extend %color_purple;
+    }
+
+
+
+
+
+
+// ==========================================================================
+   $module: "footer-bar";
+// ==========================================================================
+
+.footer-bar {
+    @extend %section;
+    @extend %font-family_cursive;
+    @extend %text-align_center;
+    @extend %color_white;
+    @extend %background-color_gray;
+}

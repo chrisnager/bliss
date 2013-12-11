@@ -1,0 +1,6 @@
+@each $item in $text-align {
+    $key: nth($item, 1);
+    $value: nth($item, 2);
+
+    %text-align_#{$key} { text-align: $value; }
+}

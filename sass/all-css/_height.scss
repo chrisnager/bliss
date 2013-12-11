@@ -1,0 +1,6 @@
+@each $item in $height {
+    $key: nth($item, 1);
+    $value: nth($item, 2);
+
+    %height_#{$key} { height: $value; }
+}
