@@ -30,3 +30,14 @@
     %border-bottom-color_#{$key} { border-bottom-color: $value; }
     %border-left-color_#{$key} { border-left-color: $value; }
 }
+
+@each $item in $border-radius {
+    $key: nth($item, 1);
+    $value: nth($item, 2);
+
+    %border-radius_#{$key} { border-radius: $value; }
+    %border-top-left-radius_#{$key} { border-top-left-radius: $value; }
+    %border-top-right-radius_#{$key} { border-top-right-radius: $value; }
+    %border-bottom-right-radius_#{$key} { border-bottom-right-radius: $value; }
+    %border-bottom-left-radius_#{$key} { border-bottom-left-radius: $value; }
+}

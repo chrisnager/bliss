@@ -80,10 +80,44 @@ body {
     }
 
     .#{$module}__body {
-        @extend %margin-top_0;
-        @extend %margin-bottom_0;
         @extend %color_purple;
     }
+
+
+
+
+
+
+// ==========================================================================
+   $module: "btn";
+// ==========================================================================
+
+%#{$module} {
+    @extend %border-width_xxs;
+    @extend %border-style_solid;
+    @extend %border-radius_pill;
+    @extend %padding-top_s;
+    @extend %padding-right_m;
+    @extend %padding-bottom_s;
+    @extend %padding-left_m;
+    @extend %display_inline-block;
+    @extend %text-decoration_none;
+    @extend %color_white;
+
+    &:hover,
+    &:focus {
+        @extend %background-color_green;
+    }
+
+    &:active {
+        @extend %color_gold;
+    }
+}
+
+.#{$module}--success {
+    @extend %btn;
+    @extend %background-color_limegreen;
+}
 
 
 

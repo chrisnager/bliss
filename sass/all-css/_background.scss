@@ -4,3 +4,70 @@
 
     %background-color_#{$key} { background-color: $value; }
 }
+
+$background-repeat:
+    no-repeat no-repeat,
+    repeat-x repeat-x,
+    repeat-y repeat-y,
+    repeat repeat,
+    space space,
+    round round;
+
+@each $item in $background-repeat {
+    $key: nth($item, 1);
+    $value: nth($item, 2);
+
+    %background-repeat_#{$key} { background-repeat: $value; }
+}
+
+$background-clip:
+    border-box border-box,
+    padding-box padding-box,
+    content-box content-box;
+
+@each $item in $background-clip {
+    $key: nth($item, 1);
+    $value: nth($item, 2);
+
+    %background-clip_#{$key} { background-clip: $value; }
+}
+
+$background-size:
+    cover cover,
+    contain contain,
+    25 25%,
+    50 50%,
+    75 75%,
+    100 100%,
+    auto auto;
+
+@each $item in $background-size {
+    $key: nth($item, 1);
+    $value: nth($item, 2);
+
+    %background-size_#{$key} { background-size: $value; }
+}
+
+$background-image:
+    url url(),
+    none none,
+    inherit inherit;
+
+@each $item in $background-image {
+    $key: nth($item, 1);
+    $value: nth($item, 2);
+
+    %background-image_#{$key} { background-image: $value; }
+}
+
+$background-position:
+    url url(),
+    none none,
+    inherit inherit;
+
+@each $item in $background-position {
+    $key: nth($item, 1);
+    $value: nth($item, 2);
+
+    %background-position_#{$key} { background-position: $value; }
+}
