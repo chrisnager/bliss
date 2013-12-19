@@ -1,6 +1,0 @@
-@each $item in $display {
-    $key: nth($item, 1);
-    $value: nth($item, 2);
-
-    %display_#{$key} { display: $value; }
-}

@@ -1,6 +1,0 @@
-@each $item in $width {
-    $key: nth($item, 1);
-    $value: nth($item, 2);
-
-    %width_#{$key} { width: $value; }
-}

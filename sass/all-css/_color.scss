@@ -1,6 +1,0 @@
-@each $item in $color {
-    $key: nth($item, 1);
-    $value: nth($item, 2);
-
-    %color_#{$key} { color: $value; }
-}

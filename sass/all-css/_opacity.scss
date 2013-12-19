@@ -1,6 +1,0 @@
-@each $item in $opacity {
-    $key: nth($item, 1);
-    $value: nth($item, 2);
-
-    %opacity_#{$key} { opacity: $value; }
-}
