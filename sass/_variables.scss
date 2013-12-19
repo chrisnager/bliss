@@ -371,6 +371,11 @@ $font-family:
     monospace monospace,
     playfair-display ("Playfair Display", Georgia, serif);
 
+$font-variant:
+    normal normal,
+    small-caps small-caps,
+    inherit inherit;
+
 $opacity:
     10 0.1,
     20 0.2,

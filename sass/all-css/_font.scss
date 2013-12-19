@@ -25,3 +25,10 @@
 
     %font-family_#{$key} { font-family: $value; }
 }
+
+@each $item in $font-variant {
+    $key: nth($item, 1);
+    $value: nth($item, 2);
+
+    %font-variant_#{$key} { font-variant: $value; }
+}
