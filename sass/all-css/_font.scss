@@ -1,3 +1,24 @@
+@each $item in $font-style {
+    $key: nth($item, 1);
+    $value: nth($item, 2);
+
+    %font-style_#{$key} { font-style: $value; }
+}
+
+@each $item in $font-weight {
+    $key: nth($item, 1);
+    $value: nth($item, 2);
+
+    %font-weight_#{$key} { font-weight: $value; }
+}
+
+@each $item in $font-size {
+    $key: nth($item, 1);
+    $value: nth($item, 2);
+
+    %font-size_#{$key} { font-size: $value; }
+}
+
 @each $item in $font-family {
     $key: nth($item, 1);
     $value: nth($item, 2);

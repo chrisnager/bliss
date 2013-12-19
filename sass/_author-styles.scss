@@ -3,8 +3,9 @@
 // ==========================================================================
 
 html {
-    @extend %background-color_paleturquoise;
+    @extend %background-color_cornflowerblue;
     @extend %font-family_sans-serif;
+    @extend %color_white;
 }
 
 body {
@@ -34,15 +35,25 @@ body {
 // ==========================================================================
 
 .#{$module} {
-    @extend %section;
-    @extend %background-color_teal;
-    @extend %border-bottom-width_xs;
+    @extend %padding-top_xxl;
+    @extend %padding-right_m;
+    @extend %padding-bottom_xxl;
+    @extend %padding-left_m;
+    @extend %text-align_center;
 }
 
     .#{$module}__title {
         @extend %margin-top_0;
         @extend %margin-bottom_0;
-        @extend %color_white;
+        @extend %font-style_italic;
+        @extend %font-weight_900;
+        @extend %font-size_xxl;
+        @extend %font-family_playfair-display;
+        text-shadow: 2px 1px cornflowerblue, 4px 2px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .#{$module}__sub-title {
+        @extend %font-size_m;
     }
 
 

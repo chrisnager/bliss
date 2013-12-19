@@ -6,30 +6,36 @@
         <meta name="author" content="@chrisnager">
         <meta name="description" content="beautifully lean, ideal style sheets">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="css/bliss.css"> -->
+        <link rel="stylesheet" href="css/bliss.css">
+        <link href="http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header class="header-bar">
             <hgroup>
-                <h1>bliss</h1>
-                <h2>beautifully lean, ideal style sheets</h2>
+                <h1 class="header-bar__title">bliss</h1>
+                <h2 class="header-bar__sub-title">beautifully lean, ideal style sheets</h2>
             </hgroup>
         </header>
         <main>
-            <p><b>bliss takes the entire CSS language and splits each declaration into single purpose Sass placeholders</b>.</p>
-            <pre>
+            <div class="card">
+                <p><b>bliss takes the entire CSS language and splits each declaration into single purpose Sass placeholders</b>.</p>
+                <pre>
 <code>%text-align_center { text-align: center; }
 
 .header-bar {
     @extend text-align_center;
 }</code>
-            </pre>
-            <p><b>bliss allows your markup to stay perfectly clean</b>, one class per styled element.</p>
-            <pre>
+                </pre>
+            </div>
+            <div class="card">
+                <p><b>bliss allows your markup to stay perfectly clean</b>, one class per styled element.</p>
+                <pre>
 <code>&lt;div class="header-bar"&gt;App Title&lt;/div&gt;</code>
-            </pre>
-            <p>Sass placeholders allow you to build your CSS modularly.</p>
-            <pre>
+                </pre>
+            </div>
+            <div class="card">
+                <p>Sass placeholders allow you to build your CSS modularly.</p>
+                <pre>
 <code>%section {
     @extend %padding_m;
     @extend %background-color_silver;
@@ -39,12 +45,15 @@
     @extend section;
     @extend text-align_center;
 }</code>
-            </pre>
-            <p><b>bliss is performant</b>. It only compiles the CSS that is used so your style sheet stays lean.</p>
-            <p><i>To take full advantage of bliss you must <a href="//www.minifycss.com/css-compressor/">minify your CSS</a></i>.</p>
+                </pre>
+            </div>
+            <div class="card">
+                <p><b>bliss is performant</b>. It only compiles the CSS that is used so your style sheet stays lean.</p>
+                <p><i>To take full advantage of bliss you must <a href="//www.minifycss.com/css-compressor/">minify your CSS</a></i>.</p>
+            </div>
         </main>
-        <footer>
-            <small>&copy; 2013 Chris Nager</small>
+        <footer class="footer-bar">
+            <small>built with bliss &middot; &copy; 2013 Chris Nager</small>
         </footer>
     </body>
 </html>
