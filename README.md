@@ -1,7 +1,7 @@
 bliss
 =====
 
-(beautifully lean, ideal style sheets)
+beautifully lean, ideal style sheets
 
 bliss is a CSS experiment by [@chrisnager](http://twitter.com/chrisnager)
 
