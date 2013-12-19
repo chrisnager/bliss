@@ -6,7 +6,7 @@
         <meta name="author" content="@chrisnager">
         <meta name="description" content="beautifully lean, ideal style sheets">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bliss.css">
+        <!-- <link rel="stylesheet" href="css/bliss.css"> -->
     </head>
     <body>
         <header>
@@ -18,27 +18,27 @@
         <main>
             <p><b>bliss takes the entire CSS language and splits each declaration into single purpose Sass placeholders</b>.</p>
             <pre>
-                <code>%text-align_center { text-align: center; }
+<code>%text-align_center { text-align: center; }
 
-                .header-bar {
-                    @extend text-align_center;
-                }</code>
+.header-bar {
+    @extend text-align_center;
+}</code>
             </pre>
             <p><b>bliss allows your markup to stay perfectly clean</b>, one class per styled element.</p>
             <pre>
-                <code>&lt;div class="header-bar"&gt;App Title&lt;/div&gt;</code>
+<code>&lt;div class="header-bar"&gt;App Title&lt;/div&gt;</code>
             </pre>
             <p>Sass placeholders allow you to build your CSS modularly.</p>
             <pre>
-                <code>%section {
-                    @extend %padding_m;
-                    @extend %background-color_silver;
-                }
+<code>%section {
+    @extend %padding_m;
+    @extend %background-color_silver;
+}
 
-                .header-bar {
-                    @extend section;
-                    @extend text-align_center;
-                }</code>
+.header-bar {
+    @extend section;
+    @extend text-align_center;
+}</code>
             </pre>
             <p><b>bliss is performant</b>. It only compiles the CSS that is used so your style sheet stays lean.</p>
             <p><i>To take full advantage of bliss you must <a href="//www.minifycss.com/css-compressor/">minify your CSS</a></i>.</p>
