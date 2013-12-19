@@ -188,6 +188,38 @@ $color:
     darkslategray #2f4f4f,
     black #000000;
 
+$background-repeat:
+    no-repeat no-repeat,
+    repeat-x repeat-x,
+    repeat-y repeat-y,
+    repeat repeat,
+    space space,
+    round round;
+
+$background-clip:
+    border-box border-box,
+    padding-box padding-box,
+    content-box content-box;
+
+$background-size:
+    cover cover,
+    contain contain,
+    25 25%,
+    50 50%,
+    75 75%,
+    100 100%,
+    auto auto;
+
+$background-image:
+    url url(),
+    none none,
+    inherit inherit;
+
+$background-position:
+    url url(),
+    none none,
+    inherit inherit;
+
 $border-width:
     xxs 1px,
     xs 2px,
