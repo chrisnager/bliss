@@ -39,3 +39,24 @@
 
     %background-position_#{$key} { background-position: $value; }
 }
+
+@each $item in $background-repeat {
+    $key: nth($item, 1);
+    $value: nth($item, 2);
+
+    %background-repeat_#{$key} { background-repeat: $value; }
+}
+
+@each $item in $background-size {
+    $key: nth($item, 1);
+    $value: nth($item, 2);
+
+    %background-size_#{$key} { background-size: $value; }
+}
+
+@each $item in $background-clip {
+    $key: nth($item, 1);
+    $value: nth($item, 2);
+
+    %background-clip_#{$key} { background-clip: $value; }
+}

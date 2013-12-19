@@ -220,6 +220,28 @@ $background-position:
     none none,
     inherit inherit;
 
+$background-repeat:
+    no-repeat no-repeat,
+    repeat-x repeat-x,
+    repeat-y repeat-y,
+    repeat repeat,
+    space space,
+    round round;
+
+$background-size:
+    cover cover,
+    contain contain,
+    25 25%,
+    50 50%,
+    75 75%,
+    100 100%,
+    auto auto;
+
+$background-clip:
+    border-box border-box,
+    padding-box padding-box,
+    content-box content-box;
+
 $border-width:
     xxs 1px,
     xs 2px,
