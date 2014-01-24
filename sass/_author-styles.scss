@@ -6,6 +6,7 @@ html {
     @extend %background-color_cornflowerblue;
     @extend %font-family_sans-serif;
     @extend %color_white;
+    // @include color_white;
 }
 
 body {
@@ -40,9 +41,8 @@ body {
     @extend %padding-bottom_xxl;
     @extend %padding-left_m;
     @extend %text-align_center;
-}
 
-    .#{$module}__title {
+    @at-root #{&}__title {
         @extend %margin-top_0;
         @extend %margin-bottom_0;
         @extend %font-style_italic;
@@ -52,9 +52,10 @@ body {
         text-shadow: 2px 1px cornflowerblue, 4px 2px 0 rgba(0, 0, 0, 0.5);
     }
 
-    .#{$module}__sub-title {
+    @at-root #{&}__sub-title {
         @extend %font-size_m;
     }
+}
 
 
 
@@ -82,17 +83,17 @@ body {
     @extend %margin_m;
     @extend %padding_l;
     @extend %background-color_skyblue;
-}
 
-    .#{$module}__title {
+    @at-root #{&}__title {
         @extend %margin-top_0;
         @extend %margin-bottom_0;
         @extend %color_midnightblue;
     }
 
-    .#{$module}__body {
+    @at-root #{&}__body {
         @extend %color_purple;
     }
+}
 
 
 
@@ -123,11 +124,11 @@ body {
     &:active {
         @extend %color_gold;
     }
-}
 
-.#{$module}--success {
-    @extend %btn;
-    @extend %background-color_limegreen;
+    @at-root #{&}--success {
+        @extend %btn;
+        @extend %background-color_limegreen;
+    }
 }
 
 
