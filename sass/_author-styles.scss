@@ -1,12 +1,10 @@
 // ==========================================================================
-   $module: "html", "body";
+// Base
 // ==========================================================================
 
 html {
-    @extend %background-color_cornflowerblue;
+    @extend %background-color_aliceblue;
     @extend %font-family_sans-serif;
-    @extend %color_white;
-    // @include color_white;
 }
 
 body {
@@ -22,7 +20,7 @@ body {
    $module: "section";
 // ==========================================================================
 
-%section {
+%#{$module} {
     @extend %padding_m;
 }
 
@@ -49,7 +47,7 @@ body {
         @extend %font-weight_900;
         @extend %font-size_xxl;
         @extend %font-family_playfair-display;
-        text-shadow: 2px 1px cornflowerblue, 4px 2px 0 rgba(0, 0, 0, 0.5);
+        @extend %color_orangered;
     }
 
     @at-root #{&}__sub-title {
@@ -66,7 +64,7 @@ body {
    $module: "content";
 // ==========================================================================
 
-.content {
+.#{$module} {
     @extend %section;
 }
 
@@ -80,18 +78,19 @@ body {
 // ==========================================================================
 
 .#{$module} {
-    @extend %margin_m;
+    @extend %border-width_s;
+    @extend %border-style_solid;
+    @extend %border-color_orangered;
     @extend %padding_l;
-    @extend %background-color_skyblue;
+    @extend %background-color_white;
 
     @at-root #{&}__title {
         @extend %margin-top_0;
         @extend %margin-bottom_0;
-        @extend %color_midnightblue;
     }
 
-    @at-root #{&}__body {
-        @extend %color_purple;
+    @at-root #{&}__description {
+        @extend %font-family_serif;
     }
 }
 
@@ -101,10 +100,11 @@ body {
 
 
 // ==========================================================================
-   $module: "btn";
+   $module: "button";
 // ==========================================================================
 
-%#{$module} {
+.#{$module} {
+    @extend %margin-bottom_xs;
     @extend %border-width_xxs;
     @extend %border-style_solid;
     @extend %border-radius_pill;
@@ -114,20 +114,30 @@ body {
     @extend %padding-left_m;
     @extend %display_inline-block;
     @extend %text-decoration_none;
-    @extend %color_white;
+    @extend %color_gray;
 
     &:hover,
     &:focus {
-        @extend %background-color_green;
+        @extend %color_black;
     }
 
     &:active {
-        @extend %color_gold;
+        @extend %background-color_silver;
     }
 
-    @at-root #{&}--success {
-        @extend %btn;
-        @extend %background-color_limegreen;
+    @at-root #{&}#{&}--success {
+        @extend %color_limegreen;
+
+        &:hover,
+        &:focus {
+            @extend %color_mediumseagreen;
+        }
+
+        &:active {
+            @extend %border-color_mediumseagreen;
+            @extend %color_white;
+            @extend %background-color_mediumseagreen;
+        }
     }
 }
 
@@ -140,10 +150,10 @@ body {
    $module: "footer-bar";
 // ==========================================================================
 
-.footer-bar {
+.#{$module} {
     @extend %section;
     @extend %font-family_cursive;
     @extend %text-align_center;
     @extend %color_white;
-    @extend %background-color_gray;
+    @extend %background-color_orangered;
 }
