@@ -55,7 +55,7 @@ body {
     @extend %padding-left_m;
     @extend %text-align_center;
 
-    @at-root &__title {
+    @at-root #{&}__title {
         @extend %margin-top_0;
         @extend %margin-bottom_0;
         @extend %font-style_italic;
@@ -65,7 +65,7 @@ body {
         @extend %color_orangered;
     }
 
-    @at-root &__sub-title {
+    @at-root #{&}__sub-title {
         @extend %font-size_m;
     }
 }
@@ -81,6 +81,9 @@ body {
 
 .#{$module} {
     @extend %section;
+    @extend %width_xxl;
+    @extend %margin-right_auto;
+    @extend %margin-left_auto;
 }
 
 
@@ -100,13 +103,13 @@ body {
     @extend %padding_l;
     @extend %background-color_white;
 
-    @at-root &__title {
+    @at-root #{&}__title {
         @extend %margin-top_0;
         @extend %margin-bottom_0;
         @extend %font-size_l;
     }
 
-    @at-root &__description {
+    @at-root #{&}__description {
         @extend %font-family_serif;
     }
 }
@@ -142,7 +145,7 @@ body {
         @extend %background-color_silver;
     }
 
-    @at-root &--success {
+    @at-root #{&}--success {
         @extend %color_limegreen;
 
         &:hover,
