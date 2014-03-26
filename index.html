@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>bliss · beautifully lean, ideal style sheets</title>
+        <meta name="author" content="@chrisnager">
+        <meta name="description" content="beautifully lean, ideal style sheets">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bliss.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Playfair+Display:900italic">
+    </head>
+    <body>
+        <header class="header-bar">
+            <hgroup>
+                <h1 class="header-bar__title">bliss</h1>
+                <h2 class="header-bar__sub-title">beautifully lean, ideal style sheets</h2>
+            </hgroup>
+        </header>
+        <main class="content">
+            <div class="card">
+                <h1 class="card__title"><b><span class="logo">bliss</span> takes the entire CSS language and splits each declaration into single purpose Sass placeholders</b>.</h1>
+                <pre>
+<code>%text-align_center { text-align: center; }
+
+.header-bar {
+    @extend text-align_center;
+}</code>
+                </pre>
+            </div>
+            <div class="card">
+                <h1 class="card__title"><b><span class="logo">bliss</span> allows your markup to stay perfectly clean</b>, one class per styled element.</h1>
+                <pre>
+<code>&lt;div class="header-bar"&gt;App Title&lt;/div&gt;</code>
+                </pre>
+            </div>
+            <div class="card">
+                <h1 class="card__title">Sass placeholders allow you to build your CSS modularly.</h1>
+                <pre>
+<code>%section {
+    @extend %padding_m;
+    @extend %background-color_silver;
+}
+
+.header-bar {
+    @extend section;
+    @extend text-align_center;
+}</code>
+                </pre>
+            </div>
+            <div class="card">
+                <h1 class="card__title"><b><span class="logo">bliss</span> is performant</b>. It only compiles the CSS that is used so your style sheet stays lean.</h1>
+                <p><i>To take full advantage of <span class="logo">bliss</span> you should <a href="//bem.info/tools/optimizers/csso/">optimize</a> your CSS.</i></div>
+
+            <p>
+                <a class="button" href="//github.com/chrisnager/bliss">View <span class="logo">bliss</span> on github</a>
+            </p>
+        </main>
+        <footer class="footer-bar">
+            <small>built with <a href="//github.com/chrisnager/bliss" class="logo">bliss</a> &middot; &copy; 2013-2014 Chris Nager</small>
+        </footer>
+    </body>
+</html>

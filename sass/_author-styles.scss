@@ -4,11 +4,22 @@
 
 html {
     @extend %background-color_aliceblue;
+    @extend %font-size_m;
     @extend %font-family_sans-serif;
 }
 
 body {
     @extend %margin_0;
+}
+
+code {
+    @extend %line-height_xl;
+    @extend %color_orangered;
+}
+
+a {
+    @extend %color_orangered;
+    @extend %text-decoration_none;
 }
 
 
@@ -81,7 +92,8 @@ body {
 
 .#{$module} {
     @extend %section;
-    @extend %width_xxl;
+    @extend %min-width_xl;
+    @extend %max-width_xxl;
     @extend %margin-right_auto;
     @extend %margin-left_auto;
 }
@@ -97,8 +109,8 @@ body {
 
 .#{$module} {
     @extend %margin-bottom_m;
-    @extend %border-width_s;
-    @extend %border-style_solid;
+    @extend %border-bottom-width_xs;
+    @extend %border-bottom-style_solid;
     @extend %border-color_orangered;
     @extend %padding_l;
     @extend %background-color_white;
@@ -124,40 +136,16 @@ body {
 // ==========================================================================
 
 .#{$module} {
-    @extend %margin-bottom_xs;
-    @extend %border-width_xxs;
-    @extend %border-style_solid;
-    @extend %border-radius_pill;
-    @extend %padding-top_s;
-    @extend %padding-right_m;
-    @extend %padding-bottom_s;
-    @extend %padding-left_m;
-    @extend %display_inline-block;
-    @extend %text-decoration_none;
-    @extend %color_gray;
+    @extend %border-radius_s;
+    @extend %padding_m;
+    @extend %display_block;
+    @extend %text-align_center;
+    @extend %color_white;
+    @extend %background-color_forestgreen;
 
     &:hover,
     &:focus {
-        @extend %color_black;
-    }
-
-    &:active {
-        @extend %background-color_silver;
-    }
-
-    @at-root #{&}--success {
-        @extend %color_limegreen;
-
-        &:hover,
-        &:focus {
-            @extend %color_mediumseagreen;
-        }
-
-        &:active {
-            @extend %border-color_mediumseagreen;
-            @extend %color_white;
-            @extend %background-color_mediumseagreen;
-        }
+        @extend %background-color_limegreen;
     }
 }
 
@@ -172,7 +160,13 @@ body {
 
 .#{$module} {
     @extend %section;
+    @extend %padding-top_l;
+    @extend %padding-bottom_l;
     @extend %text-align_center;
     @extend %color_white;
     @extend %background-color_orangered;
+
+    a {
+        @extend %color_white;
+    }
 }
