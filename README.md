@@ -44,7 +44,7 @@ Sass placeholders allow you to build your CSS modularly.
 
 __bliss is performant__. It only compiles the CSS that is used so your style sheet stays lean.
 
-_To take full advantage of bliss you must [optimize](http://bem.info/tools/optimizers/csso/) or at least [minify](http://www.minifycss.com/css-compressor/) your CSS_.
+_To take full advantage of bliss you should [optimize](http://bem.info/tools/optimizers/csso/) your CSS_.
 
 
 ---
