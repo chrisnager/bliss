@@ -995,9 +995,10 @@ $items:
     font-size xs 0.625rem,
     font-size s 0.8rem,
     font-size m 1rem,
-    font-size l 1.5rem,
-    font-size xl 3rem,
-    font-size xxl 6rem,
+    font-size l 1.25rem,
+    font-size xl 1.5rem,
+    font-size xxl 3rem,
+    font-size xxxl 6rem,
 
     font-family serif (Georgia, serif),
     font-family sans-serif (Helvetica, Arial, sans-serif),
@@ -1035,7 +1036,17 @@ $items:
     overflow scroll scroll,
     overflow auto auto,
 
-    vertical-align baseline baseline,
+    overflow-x visible visible,
+    overflow-x hidden hidden,
+    overflow-x scroll scroll,
+    overflow-x auto auto,
+
+    overflow-y visible visible,
+    overflow-y hidden hidden,
+    overflow-y scroll scroll,
+    overflow-y auto auto,
+
+   vertical-align baseline baseline,
     vertical-align sub sub,
     vertical-align super super,
     vertical-align text-top text-top,

@@ -3,23 +3,26 @@
 // ==========================================================================
 
 html {
-    @extend %background-color_aliceblue;
-    @extend %font-size_m;
     @extend %font-family_sans-serif;
+    @extend %background-color_aliceblue;
 }
 
 body {
     @extend %margin_0;
 }
 
-code {
-    @extend %line-height_xl;
-    @extend %color_orangered;
-}
-
 a {
     @extend %color_orangered;
     @extend %text-decoration_none;
+}
+
+pre {
+    @extend %overflow-x_scroll;
+}
+
+code {
+    @extend %line-height_xl;
+    @extend %color_orangered;
 }
 
 
@@ -32,7 +35,7 @@ a {
 // ==========================================================================
 
 %#{$module} {
-    @extend %padding_m;
+    @extend %padding_s;
 }
 
 
@@ -69,11 +72,8 @@ a {
     @at-root #{&}__title {
         @extend %margin-top_0;
         @extend %margin-bottom_0;
-        @extend %font-style_italic;
-        @extend %font-weight_900;
-        @extend %font-size_xxl;
+        @extend %font-size_xxxl;
         @extend %font-family_playfair-display;
-        @extend %color_orangered;
     }
 
     @at-root #{&}__sub-title {
@@ -92,10 +92,10 @@ a {
 
 .#{$module} {
     @extend %section;
-    @extend %min-width_xl;
     @extend %max-width_xxl;
     @extend %margin-right_auto;
     @extend %margin-left_auto;
+    @extend %padding-bottom_l;
 }
 
 
@@ -108,11 +108,11 @@ a {
 // ==========================================================================
 
 .#{$module} {
-    @extend %margin-bottom_m;
+    @extend %margin-bottom_s;
     @extend %border-bottom-width_xs;
     @extend %border-bottom-style_solid;
     @extend %border-color_orangered;
-    @extend %padding_l;
+    @extend %padding_m;
     @extend %background-color_white;
 
     @at-root #{&}__title {
@@ -141,11 +141,11 @@ a {
     @extend %display_block;
     @extend %text-align_center;
     @extend %color_white;
-    @extend %background-color_forestgreen;
+    @extend %background-color_deepskyblue;
 
     &:hover,
     &:focus {
-        @extend %background-color_limegreen;
+        @extend %background-color_dodgerblue;
     }
 }
 
